@@ -86,6 +86,13 @@
     
     // multiple placeholders
     //_resultLbl.text = [[NSString alloc] initWithFormat:@"%f + %f = %.2f", num1, num2, result];
+    
+    // how to create a variable
+    NSString *message = [[NSString alloc] initWithFormat:@"%d + %d = %d", n1, n2, result];
+    _resultLbl.text = message;
+    // release message variable
+    [message release];
+    
 }
 
 
