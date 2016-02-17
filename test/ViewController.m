@@ -56,9 +56,13 @@
     
     int n1, n2, result;
     
+    // int values string format
     n1 = [_firstNumberTextField.text intValue];
     n2 = [_secondNumberTextField.text intValue];
-    
+ 
+    // double values string format
+    // n1 = [_firstNumberTextField.text intValue];
+    // n2 = [_secondNumberTextField.text intValue];
     
     NSString *title = sender.titleLabel.text;
     
@@ -77,6 +81,11 @@
     }
     _resultLbl.text = [[NSString alloc] initWithFormat:@"Result is : %d", result];
     
+    // double values with 2 decimal
+    //_resultLbl.text = [[NSString alloc] initWithFormat:@"Result is : %.2f", result];
+    
+    // multiple placeholders
+    //_resultLbl.text = [[NSString alloc] initWithFormat:@"%f + %f = %.2f", num1, num2, result];
 }
 
 
